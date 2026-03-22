@@ -1,0 +1,138 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Inter', 'Segoe UI', sans-serif;
+    background-color: #f7f9fc;
+    color: #111;
+    line-height: 1.6;
+
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    padding: 2rem;
+}
+
+.app-container {
+    background-color: white;
+    border-radius: 20px;
+    padding: 40px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.05);
+    max-width: 900px;
+    width: 100%;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 60px;
+}
+
+.input-group {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 20px;
+}
+
+label {
+    font-weight: bold;
+    margin-bottom: 8px;
+    color: black;
+}
+
+input {
+    padding: 14px;
+    border: 3px solid #ccc;
+    border-radius: 8px;
+    font-size: 1rem;
+    font-family: inherit;
+}
+
+input:focus {
+    outline: none;
+    border-color: #000;
+}
+
+.update-btn {
+    width: 100%;
+    background-color: #111;
+    color: white;
+    padding: 16px;
+    border: none;
+    border-radius: 8px;
+    font-size: 1.1rem;
+    font-weight: bold;
+    cursor: pointer;
+    margin-top: 10px;
+}
+
+.update-btn:hover {
+    background-color: #333;
+}
+
+.email-input input {
+    border-color: red;
+    color: red;
+}
+
+.error-msg {
+    color: red;
+    font-size: 0.8rem;
+    font-weight: bold;
+    margin-top: 5px;
+}
+
+.dashboard {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.progress-circle {
+    width: 160px;
+    height: 160px;
+    border-radius: 50%;
+    background: conic-gradient(#e7e1e1 35%, #020202 35%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    margin-bottom: 25px;
+}
+
+.progress-circle::before {
+    content: "";
+    position: absolute;
+    width: 140px;
+    height: 140px;
+    background-color: #f7f9fc;
+    border-radius: 50%;
+}
+
+.progress-circle span {
+    position: relative;
+    font-size: 2rem;
+    font-weight: bold;
+    color: #111;
+}
+
+.check-list {
+    list-style: none;
+    background-color: #ebebeb;
+    padding: 20px;
+    border-radius: 12px;
+    width: 100%;
+    margin-top: 20px;
+}
+
+.check-list li {
+    padding: 10px 0;
+    font-weight: 500;
+}
+
+.check-list .checked {
+    text-decoration: line-through;
+    color: #888;
+}
