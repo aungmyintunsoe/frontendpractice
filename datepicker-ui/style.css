@@ -1,0 +1,104 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    line-height: 1.6;
+    background-color: #f0f4f8;
+    color: #333;
+
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+.date-picker {
+
+    height: 400px;
+}
+
+.input-bar {
+    width: 280px;
+    background-color: white;
+    border: 2px solid #333;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+}
+
+.input-bar span {
+    padding-left: 15px;
+    color: #888;
+}
+
+.input-bar button {
+    border: none;
+    border-left: 2px solid #333;
+    background-color: white;
+    padding: 10px 10px;
+    font-size: 1.2rem;
+    cursor: pointer;
+}
+
+.input-bar button:hover {
+    background-color: #f0f0f0;
+}
+
+.calendar-dropdown {
+    position: absolute;
+    top: 100%;
+    left: -2px;
+
+    width: calc(100% + 3.5px);
+    background-color: white;
+    border: 2px solid #333;
+
+}
+
+.calendar-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    border-bottom: 2px solid #333;
+}
+
+.calendar-header i {
+    cursor: pointer;
+}
+
+.calendar-grid {
+    display: grid;
+    grid-template-columns: repeat(7, 1fr);
+    text-align: center;
+    background-color: #ccc;
+    gap: 1px;
+
+}
+
+.calendar-grid span {
+    padding: 10px 0;
+    cursor: pointer;
+    background-color: white;
+}
+
+.calendar-grid span:hover {
+    background-color: #f0f0f0;
+    border-radius: 5px;
+}
+
+.calendar-grid .weekday {
+    color: #888;
+    font-weight: bold;
+    padding: 15px 0
+}
+
+.calendar-grid .weekday:hover {
+    background-color: transparent;
+}
