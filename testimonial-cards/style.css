@@ -1,0 +1,122 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    line-height: 1.6;
+    background-color: #f9fafb;
+    /* Soft light gray background */
+    color: #333;
+    padding: 2rem;
+
+    /* Center the cards in the middle of the screen */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+.testimonials-container {
+    /* We'll use CSS Grid later to arrange the cards nicely! */
+    display: grid;
+    gap: 2rem;
+    max-width: 1000px;
+    width: 100%;
+    grid-template-columns: 1fr 1fr;
+}
+
+.speech-bubble {
+    background-color: #222;
+    color: white;
+    padding: 30px;
+    border-radius: 12px;
+    position: relative;
+
+}
+
+.speech-bubble::after {
+    content: "";
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    background-color: #222;
+    bottom: -10px;
+    left: 40px;
+    transform: rotate(45deg);
+}
+
+.author {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    padding: 20px;
+}
+
+.author img {
+    width: 70px;
+    height: 70px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+.light-card {
+    background-color: #fff;
+    border-radius: 12px;
+    border: 2px solid #222;
+    padding: 10px;
+}
+
+.image-card img {
+    width: 100%;
+    height: 100%;
+    border-radius: 12px;
+    object-fit: cover;
+}
+
+.dark-card {
+    background-color: #222;
+    border-radius: 12px;
+    padding: 10px;
+    color: #fff;
+}
+
+.bottom {
+    grid-column: span 2;
+
+    background-color: #fff;
+    padding: 40px;
+    border-radius: 12px;
+    border: 2px solid #222;
+    text-align: center;
+}
+
+.carousel {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    gap: 15px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+
+}
+
+.carousel img {
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+.main-avatar {
+    width: 70px;
+    height: 70px;
+    border: 3px solid #333;
+}
+
+.faded-avatar {
+    width: 50px;
+    height: 50px;
+    opacity: 0.5;
+}
