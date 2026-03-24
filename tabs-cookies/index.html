@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tabs Component</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <main class="app-container">
+        
+        <h2>Tabs Component</h2>
+        <p class="subtitle">Clicking each tab should hide the content of the other tab and show the content of the clicked tab. By default, enable the first tab.</p>
+
+        
+        <div class="tabs-wrapper">
+            
+            
+            <div class="tabs-header">
+                
+                <button class="tab-btn active" data-tab="tab-1">First Tab</button>
+                <button class="tab-btn" data-tab="tab-2">Second Tab</button>
+                <button class="tab-btn" data-tab="tab-3">Third Tab</button>
+                <button class="tab-btn" data-tab="tab-4">Fourth Tab</button>
+            </div>
+
+            
+            <div class="tabs-content">
+                <div class="content-panel active" id="tab-1">
+                    First Tab content to be displayed here.
+                </div>
+                <div class="content-panel" id="tab-2">
+                    Second Tab content to be displayed here.
+                </div>
+                <div class="content-panel" id="tab-3">
+                    Third Tab content to be displayed here.
+                </div>
+                <div class="content-panel" id="tab-4">
+                    Fourth Tab content to be displayed here.
+                </div>
+            </div>
+
+        </div>
+
+    </main>
+
+    
+    <script src="script.js"></script>
+</body>
+</html>
