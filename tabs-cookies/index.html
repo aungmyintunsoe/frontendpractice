@@ -1,31 +1,35 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Tabs Component</title>
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
 </head>
+
 <body>
 
     <main class="app-container">
-        
-        <h2>Tabs Component</h2>
-        <p class="subtitle">Clicking each tab should hide the content of the other tab and show the content of the clicked tab. By default, enable the first tab.</p>
 
-        
+        <h2>Tabs Component</h2>
+        <p class="subtitle">Clicking each tab should hide the content of the other tab and show the content of the
+            clicked tab. By default, enable the first tab.</p>
+
+
         <div class="tabs-wrapper">
-            
-            
+
+
             <div class="tabs-header">
-                
+
                 <button class="tab-btn active" data-tab="tab-1">First Tab</button>
                 <button class="tab-btn" data-tab="tab-2">Second Tab</button>
                 <button class="tab-btn" data-tab="tab-3">Third Tab</button>
                 <button class="tab-btn" data-tab="tab-4">Fourth Tab</button>
             </div>
 
-            
+
             <div class="tabs-content">
                 <div class="content-panel active" id="tab-1">
                     First Tab content to be displayed here.
@@ -44,8 +48,16 @@
         </div>
 
     </main>
+    <div id = "cookie-banner" class="cookie-banner">
+        <button id="close-btn"><i class="fa-solid fa-xmark"></i></button>
+        <i class="fa-solid fa-cookie-bite"></i>
+        <p>We use cookies to improve your experience on our website. By continuing to use our website, you agree to our use of cookies.</p>
+        <button id="accept-btn">Accept All</button>
 
-    
+    </div>
+
+
     <script src="script.js"></script>
 </body>
+
 </html>

@@ -80,3 +80,50 @@ h2 {
 .content-panel.active {
     display: block;
 }
+
+.cookie-banner {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background-color: #111;
+    color: white;
+    padding: 30px;
+    border-radius: 12px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.05);
+    max-width: 300px;
+    width: 100%;
+}
+
+.cookie-banner p {
+    font-size: 0.9rem;
+    color: #ccc;
+    margin: 15px 0;
+}
+
+
+#close-btn {
+    position: absolute;
+    top: 15px;
+    right: 15px;
+
+
+    background: none;
+    border: none;
+    color: #888;
+    cursor: pointer;
+}
+
+#accept-btn {
+    width: 100%;
+    padding: 12px;
+    background-color: white;
+    color: black;
+    border: none;
+    border-radius: 8px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.hidden {
+    display: none !important;  
+}
