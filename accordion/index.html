@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Accordion Component</title>
+    <link rel="stylesheet" href="style.css">
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+
+    <main class="app-container">
+        <h2>Frequently Asked Questions</h2>
+        
+        <div class="accordion">
+            
+            
+            <div class="accordion-item">
+                <button class="accordion-header">
+                    What is JavaScript?
+                    <i class="fa-solid fa-chevron-down icon"></i>
+                </button>
+                <div class="accordion-content">
+                    <p>JavaScript is a programming language that allows you to implement complex features on web pages.</p>
+                </div>
+            </div>
+
+            
+            <div class="accordion-item">
+                <button class="accordion-header">
+                    What is the DOM?
+                    <i class="fa-solid fa-chevron-down icon"></i>
+                </button>
+                <div class="accordion-content">
+                    <p>The Document Object Model (DOM) is a programming interface for HTML and XML documents.</p>
+                </div>
+            </div>
+
+            
+            <div class="accordion-item">
+                <button class="accordion-header">
+                    How does an Accordion work?
+                    <i class="fa-solid fa-chevron-down icon"></i>
+                </button>
+                <div class="accordion-content">
+                    <p>It uses CSS to hide content by default, and JavaScript to add an 'active' class when clicked to reveal the content!</p>
+                </div>
+            </div>
+
+        </div>
+    </main>
+
+    <script src="script.js"></script>
+</body>
+</html>
